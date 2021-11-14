@@ -7,7 +7,6 @@ const assertEqual = function(actual,expected) {
   } else {
     console.log('🛑🛑🛑' + "Assertion Failed:[%s] !== [%s]",str1,str2);
   }
-  //console.assert(actual.equals(expected) expected,'Assertion Failed:'
 };
 assertEqual("Lighthouse Labs","Bootcamp");
 assertEqual(1,1);
