@@ -31,7 +31,7 @@ const assertEqual = function(actual,expected) {
       console.log('🛑🛑🛑' + "Assertion Failed:[%s] !== [%s]",str1,str2);
     }
   };
-function assertEqualArrays(array1,array2)
+function assertArraysEquals(array1,array2)
 {
     let result = eqArrays(array1,array2);
     if (result) {
@@ -41,7 +41,7 @@ function assertEqualArrays(array1,array2)
       }
     
 }
-assertEqualArrays([1, 2, 3], [1, 2, 3]);
-assertEqualArrays([1,2,4,5],[1,3,6,7]);
-assertEqualArrays(["1", "2", "3"], ["1", "2", "3"]);
-assertEqualArrays(["1", "2", "3"], ["1", "2", 3]);
+assertArraysEquals([1, 2, 3], [1, 2, 3]);
+assertArraysEquals([1,2,4,5],[1,3,6,7]);
+assertArraysEquals(["1", "2", "3"], ["1", "2", "3"]);
+assertArraysEquals(["1", "2", "3"], ["1", "2", 3]);
