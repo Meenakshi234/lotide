@@ -2,16 +2,6 @@
 const  assert = require('chai').assert;
 const head = require('../head');
 
-/* const assertEqual = require('../assertEqual');
-console.log(head([2,3,4])); 
-console.log(head([]));
-console.log(head([8]));
-console.log(head(['Meenakshi']));
-console.log(head(['apple','banana','pear']));
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head(['apple','banana','pear']), "banana"); */
-
 describe("#head",()=>{
     it("require 1 for [1,2,3]",()=>{
         assert.strictEqual(head([1,2,3]),1);
