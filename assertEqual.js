@@ -3,9 +3,9 @@ const assertEqual = function(actual,expected) {
   let str2 = expected;
   let result = (str1 === str2);
   if (result) {
-   return console.log('✅✅✅' + "Assertion Passed:[%s] === [%s]",str1,str2);
+   return '✅✅✅ Assertion Passed:[' + str1 + '] === [' + str2 +']';
   } else {
-    return console.log('🛑🛑🛑' + "Assertion Failed:[%s] !== [%s]",str1,str2);
+    return '🛑🛑🛑 Assertion Failed:[' + str1 +'] !== [' + str2 +']';
   }
 };
 
