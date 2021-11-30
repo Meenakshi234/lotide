@@ -9,9 +9,4 @@ const map = function(array, callback) {
   return results;
   }
 const results1 = map(words, word => word[0]);
-/* console.log(results1);
-assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]);
-assertArraysEqual(results1,[ 'g', 'o', 't', 'm', 't' ]);
-assertArraysEqual(results1,[ 'g', 'o', 'o', 'm', 't' ]);
- */
 module.exports = map;

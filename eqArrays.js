@@ -1,5 +1,5 @@
 const assertEqual = require('./assertEqual');
-const eqArrays =(a,b) =>{
+const eqArrays = (a,b) =>{
       //1. Check if the two values are identical.
       if(a === b) return true;
 
@@ -20,7 +20,7 @@ const eqArrays =(a,b) =>{
 
      //6. Use Array.prototype.every() to check if every key in a exists in b and if they are equivalent by calling eqArrays() recursively.
     return keys.every(k => eqArrays(a[k], b[k]));
-  };
+};
 
 
 
