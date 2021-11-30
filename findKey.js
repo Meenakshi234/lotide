@@ -1,37 +1,14 @@
-const assertEqual = function(actual,expected) {
-    let str1 = actual;
-    let str2 = expected;
-    let result = (str1 === str2);
-    if (result) {
-      console.log('✅✅✅' + "Assertion Passed:[%s] === [%s]",str1,str2);
-    } else {
-      console.log('🛑🛑🛑' + "Assertion Failed:[%s] !== [%s]",str1,str2);
-    }
-  };
-  function findKeyByValue(objSearch,valueSearch){
-    let keyArray= Object.keys(objSearch);
-    let returnString ;  
-    for(var item of keyArray)
-    {
-        if(objSearch[item] == valueSearch)
-        {
-            return item;
-        }
-    }
-}
+const assertEqual = require('./assertEqual');
+const findKeyByValue = require('./findKeyByValue');
 
-  const findKey = function(objectInput,callback){
-     let objValues =Object.values(objectInput)
-    // console.log(objValues);
-    for(let item of objValues){
-        //console.log(item);
-        if(callback(item)){
+const findKey = function(objectInput,callback){
+  let objValues =Object.values(objectInput)
+  for(let item of objValues){
+    if(callback(item)){
          return findKeyByValue(objectInput,item);
-        }
-        
     }
+  }
     return "item Not Found";
-    
   }
 
  const result = findKey({
@@ -43,7 +20,6 @@ const assertEqual = function(actual,expected) {
     "Akelarre":  { stars: 3 }
   }, x => x.stars === 2); // => "noma"
  
-   
-  console.log(result);
-  assertEqual(result ,"noma");
-  assertEqual(result,"Ora");
+  /* assertEqual(result ,"noma");
+  assertEqual(result,"Ora"); */
+  module.exports = findKey;

@@ -51,7 +51,7 @@ const takeUntil = function(array, callback) {
   return results;
   }
 
-  const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+  /* const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
   const results1 = takeUntil(data1, x => x < 0);
   console.log(results1);
   console.log('---');
@@ -61,4 +61,6 @@ const takeUntil = function(array, callback) {
   assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]);
   assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
   assertArraysEqual(results1,[ 1, 2, 5, 7, 1 ]);
-  assertArraysEqual(results2, [ 'I\'ve', 'been', 'Hollywood' ]);
+  assertArraysEqual(results2, [ 'I\'ve', 'been', 'Hollywood' ]); */
+
+  module.exports = takeUntil;
