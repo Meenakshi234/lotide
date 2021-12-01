@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@virkmeenakshi/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "lotide library makes javascript easier by taking the hassle out of working with arrays, numbers,objects,strings.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Meenakshi234/lotide.git"
   },
-  "author": "",
+  "author": "Meenakshi Virk <virk.meenakshi@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Meenakshi234/lotide/issues"
